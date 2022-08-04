@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        /* .main {
+            display: flex;
+            justify-content: space-between;
+            min-width: 1832px;
+            min-height: 400px;
+        } */
+
+        #img1 {
+
+            background: url(assets/L1-A.png) no-repeat;
+            width: 55%;
+            height: 980px;
+
+        }
+
+        #img1:hover {
+            background: url(assets/l1.png) no-repeat;
+            transition: 3s;
+        }
+
+        #img2 {
+            background: url(assets/R2-B.png) no-repeat;
+            width: 50%;
+            height: 980px;
+        }
+
+        #img2:hover {
+            background: url(assets/L2-A.png) no-repeat;
+            transition: 3s;
+        }
+
+        #center {
+            /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 553px;
+            height: 400px;
+            position: absolute;
+            top: 480px;
+            left: 650px;
+            text-align: center;
+            z-index: -1; */
+           
+
+        }
+
+        .animate__animated.animate__fadeIn {
+            --animate-duration: 3s;
+        }
+
+        @media screen and (max-width:1300px) {
+            .main {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            #img1 {
+
+                background: url(assets/ver/M1\ A.png) no-repeat;
+                background-size: 100% 600px;
+                width: 100%;
+                height: 600px;
+            }
+
+            #img1:hover {
+
+                background: url(assets/ver/M1\ B.png) no-repeat;
+                background-size: 100% 600px;
+                width: 100%;
+                height: 600px;
+            }
+
+            #img2 {
+                background: url(assets/ver/M2-A.png) no-repeat;
+
+                background-size: 100% 600px;
+                width: 100%;
+                height: 600px;
+            }
+
+            #img2:hover {
+
+                background: url(assets/ver/M2-B.png) no-repeat;
+                background-size: 100% 600px;
+                width: 100%;
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div id="img1"></div>
+        <div id="img2"> <p>Lorem ipsum dolor sit amet.</p></div>
+        <div class="center">
+            <div class="inner1">
+                <img src="assets/image (1).png" alt="">
+                <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="inner2">
+                <img src="assets/image.png" alt="">
+                 <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            </div>
+    </div>
+    
+</body>
+
+<script>
+
+    let val1 = document.getElementById("img1")
+    let val2 = document.getElementById("img2")
+
+    document.getElementById('center').innerHTML = null
+
+    val1.addEventListener("mouseover", () => {
+        // document.getElementById('center').innerHTML =`<img src=`
+
+    })
+    // val1.addEventListener("mouseout", () => {
+    //     document.getElementById("myImg1").src = "assets/L1-A.png"
+    //     document.getElementById('center').innerHTML = null
+    // })
+
+    // val2.addEventListener("mouseover", () => {
+    //     document.getElementById("myImg2").src = "assets/L2-A.png"
+    //     document.getElementById('center').innerHTML =
+    //         `
+    //     <img src="assets/image (1).png" class="animate__animated animate__fadeIn"  width="200px">
+    //    <h1>Book A Paradigam </h1><h3>Tour</h3>
+    //     `
+    // })
+    // val2.addEventListener("mouseout", () => {
+    //     document.getElementById("myImg2").src = "assets/R2-B.png"
+    //     document.getElementById('center').innerHTML = null
+    // })
+
+</script>
+
+</html>
